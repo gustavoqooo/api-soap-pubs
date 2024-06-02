@@ -5,6 +5,7 @@ import lombok.AllArgsConstructor;
 import org.springframework.ws.server.endpoint.annotation.Endpoint;
 import org.springframework.ws.server.endpoint.annotation.PayloadRoot;
 import org.springframework.ws.server.endpoint.annotation.RequestPayload;
+import org.springframework.ws.server.endpoint.annotation.ResponsePayload;
 import pe.edu.cibertec.api_soap_pubs.repository.PaisRepository;
 import pe.edu.cibertec.ws.objects.GetPaisRequest;
 import pe.edu.cibertec.ws.objects.GetPaisResponse;
@@ -19,6 +20,7 @@ public class PaisEndPoint {
 
     @PayloadRoot(namespace =  NAMESPACE_URL,
     localPart = "getPaisRequest")
+    @ResponsePayload
     public GetPaisResponse getPais(@RequestPayload GetPaisRequest request){
         GetPaisResponse response = new GetPaisResponse();
         response.setPais(paisRepository.buscarPorNombre(request.getNombre()));
