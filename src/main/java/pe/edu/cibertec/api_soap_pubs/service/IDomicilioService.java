@@ -1,15 +1,14 @@
 package pe.edu.cibertec.api_soap_pubs.service;
-
-import pe.edu.cibertec.api_soap_pubs.model.Domicilio;
+import pe.edu.cibertec.ws.objects.Domiciliows;
 
 import java.util.List;
 
 public interface IDomicilioService {
 
-    List<Domicilio> listarDomicilios();
+    List<Domiciliows> listarDomicilios();
 
-    Domicilio obtenerDomicilioxId(int id);
+    Domiciliows obtenerDomicilioxId(int id);
 
-    Domicilio registrarActualizarDomicilio(Domicilio domicilio);
+    Domiciliows registrarActualizarDomicilio(Domiciliows domicilio);
 
 }
