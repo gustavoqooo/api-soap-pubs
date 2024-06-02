@@ -1,11 +1,11 @@
 package pe.edu.cibertec.api_soap_pubs.model;
 
 import jakarta.persistence.*;
-import lombok.Builder;
-import lombok.Data;
+import lombok.*;
 
-@Builder
-@Data
+
+@Getter
+@Setter
 @Entity
 @Table(name = "domicilio")
 public class Domicilio {

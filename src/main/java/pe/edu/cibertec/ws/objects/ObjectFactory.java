@@ -2,7 +2,7 @@
 // Este archivo ha sido generado por Eclipse Implementation of JAXB v3.0.0 
 // Visite https://eclipse-ee4j.github.io/jaxb-ri 
 // Todas las modificaciones realizadas en este archivo se perderán si se vuelve a compilar el esquema de origen. 
-// Generado el: 2024.06.02 a las 10:14:12 AM PET 
+// Generado el: 2024.06.02 a las 01:09:32 PM PET 
 //
 
 
@@ -37,11 +37,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetDomiliciosRequest }
+     * Create an instance of {@link GetDomiciliosRequest }
      * 
      */
-    public GetDomiliciosRequest createGetDomiliciosRequest() {
-        return new GetDomiliciosRequest();
+    public GetDomiciliosRequest createGetDomiciliosRequest() {
+        return new GetDomiciliosRequest();
     }
 
     /**
@@ -61,11 +61,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link GetDomilicioRequest }
+     * Create an instance of {@link GetDomicilioRequest }
      * 
      */
-    public GetDomilicioRequest createGetDomilicioRequest() {
-        return new GetDomilicioRequest();
+    public GetDomicilioRequest createGetDomicilioRequest() {
+        return new GetDomicilioRequest();
     }
 
     /**
@@ -77,11 +77,11 @@ public class ObjectFactory {
     }
 
     /**
-     * Create an instance of {@link PostDomilicioRequest }
+     * Create an instance of {@link PostDomicilioRequest }
      * 
      */
-    public PostDomilicioRequest createPostDomilicioRequest() {
-        return new PostDomilicioRequest();
+    public PostDomicilioRequest createPostDomicilioRequest() {
+        return new PostDomicilioRequest();
     }
 
     /**

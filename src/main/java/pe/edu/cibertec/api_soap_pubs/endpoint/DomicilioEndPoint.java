@@ -19,8 +19,8 @@ public class DomicilioEndPoint {
 
     @PayloadRoot(namespace = NAMESPACE_URL, localPart = "getDomiciliosRequest")
     @ResponsePayload
-    public GetDomiciliosResponse listarDomicilios(@RequestPayload
-                                                  GetDomiliciosRequest request){
+    public GetDomiciliosResponse getDomicilios(@RequestPayload
+                                                  GetDomiciliosRequest request){
         GetDomiciliosResponse response = new GetDomiciliosResponse();
         response.getDomicilios().addAll(domicilioService.listarDomicilios());
         return response;
@@ -28,8 +28,8 @@ public class DomicilioEndPoint {
 
     @PayloadRoot(namespace = NAMESPACE_URL, localPart = "getDomicilioRequest")
     @ResponsePayload
-    public GetDomicilioResponse obtenerDomicilioxId(@RequestPayload
-                                                  GetDomilicioRequest request){
+    public GetDomicilioResponse getDomicilio(@RequestPayload
+                                                  GetDomicilioRequest request){
         GetDomicilioResponse response = new GetDomicilioResponse();
         Domiciliows domiciliows = domicilioService.obtenerDomicilioxId(request.getId());
         if(domiciliows == null)
@@ -39,8 +39,8 @@ public class DomicilioEndPoint {
     }
     @PayloadRoot(namespace = NAMESPACE_URL, localPart = "postDomicilioRequest")
     @ResponsePayload
-    public PostDomicilioResponse registrarDomicilio(@RequestPayload
-                                                    PostDomilicioRequest request){
+    public PostDomicilioResponse saveDomicilio(@RequestPayload
+                                                    PostDomicilioRequest request){
         PostDomicilioResponse response = new PostDomicilioResponse();
         response.setDomicilio(domicilioService.registrarActualizarDomicilio(
                 request.getDomicilio()));

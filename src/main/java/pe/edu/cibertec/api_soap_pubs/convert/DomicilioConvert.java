@@ -11,10 +11,13 @@ import java.util.List;
 public class DomicilioConvert {
 
     public Domicilio convertDomiciliowsToDomicilio(Domiciliows domiciliows){
-        return Domicilio.builder().iddomicilio(domiciliows.getIddomicilio())
-                .descdomicilio(domiciliows.getDescdomicilio())
-                .nrodomicilio(domiciliows.getNrodomicilio())
-                .refdomicilio(domiciliows.getRefdomicilio()).build();
+        Domicilio domicilio = new Domicilio();
+        domicilio.setIddomicilio(domiciliows.getIddomicilio());
+        domicilio.setDescdomicilio(domiciliows.getDescdomicilio());
+        domicilio.setNrodomicilio(domiciliows.getNrodomicilio());
+        domicilio.setRefdomicilio(domiciliows.getRefdomicilio());
+        return domicilio;
+
     }
 
     public List<Domicilio> convertDomiciliowsToDomicilio(List<Domiciliows> domiciliows){
