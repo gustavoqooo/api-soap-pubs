@@ -2,6 +2,29 @@
            xmlns:tns="http://www.cibertec.edu.pe/ws/objects"
            targetNamespace="http://www.cibertec.edu.pe/ws/objects"
            elementFormDefault="qualified">
+    <!--Obtener domicilios-->
+    <xs:element name="getDomiliciosRequest">
+        <xs:complexType>
+            <xs:sequence />
+        </xs:complexType>
+    </xs:element>
+    <xs:element name="getDomiciliosResponse">
+        <xs:complexType>
+            <xs:sequence>
+                <xs:element name="domicilios" type="tns:domiciliows"
+                            maxOccurs="unbounded" />
+            </xs:sequence>
+        </xs:complexType>
+    </xs:element>
 
+
+<xs:complexType name="domiciliows">
+    <xs:sequence>
+        <xs:element name="iddomicilio" type="xs:int"/>
+        <xs:element name="descdomicilio" type="xs:string"/>
+        <xs:element name="nrodomicilio" type="xs:int"/>
+        <xs:element name="refdomicilio" type="xs:string"/>
+    </xs:sequence>
+</xs:complexType>
 
 </xs:schema>
